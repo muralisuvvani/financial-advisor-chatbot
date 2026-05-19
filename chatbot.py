@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configure Gemini API Key
-os.environ["GOOGLE_API_KEY"] = os.getenv("gemini_study")
+os.environ["GOOGLE_API_KEY"] = st.secrets["gemini_study"]
 
 # Streamlit Page Config
 st.set_page_config(
